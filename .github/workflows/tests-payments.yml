@@ -3,6 +3,8 @@ name: tests-payments
 # this determines when to run this workflow
 on:
   pull_request
+    path:
+      - 'payments/**'
   
 jobs:
   # this builds the application in a VM to run the code

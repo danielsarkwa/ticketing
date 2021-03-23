@@ -3,6 +3,8 @@ name: tests-orders
 # this determines when to run this workflow
 on:
   pull_request
+    path:
+      - 'orders/**'
   
 jobs:
   # this builds the application in a VM to run the code
