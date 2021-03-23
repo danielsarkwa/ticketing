@@ -1,0 +1,16 @@
+name: tests-payments
+
+# this determines when to run this workflow
+on:
+  pull_request
+  
+jobs:
+  # this builds the application in a VM to run the code
+  build:
+    runs-on: ubuntu-latest
+    # micro actions to perform our workflow in the VM
+    steps:
+        # this takes all the code from our project
+      - uses: actions/checkout@v2
+        # run a command in the VM
+      - run: cd payments && npm install && npm run test:ci
