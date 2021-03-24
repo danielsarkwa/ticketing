@@ -2,7 +2,7 @@ name: tests-orders
 
 # this determines when to run this workflow
 on:
-  pull_request
+  pull_request:
     path:
       - 'orders/**'
   
