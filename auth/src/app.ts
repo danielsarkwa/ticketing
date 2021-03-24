@@ -21,7 +21,8 @@ app.use(
   cookieSession({
     signed: false,
     // returns true when the application is not in the test mode -- production / development
-    secure: process.env.Node_ENV !== 'test' 
+    // secure: process.env.Node_ENV !== 'test' 
+    secure: false
   })
 );
 
