@@ -17,7 +17,8 @@ app.use(json());
 app.use(
   cookieSession({
     signed: false,
-    secure: process.env.Node_ENV !== 'test'
+    // secure: process.env.Node_ENV !== 'test'
+    secure: false
   })
 );
 // extract user payload from cookie into req.currentUser
